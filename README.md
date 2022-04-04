@@ -2,7 +2,7 @@
 
 ## Project scope
 Lobster data for multiple days are provided within big 7z files, which we have to unzip to access single days.
-In case of 1-year of data with level 10, a 7z file can required up to 5GB of disk space, but when we unzip we easily require 50-100GB. This library allows to access single days inside the 7z without the need to unzip the file. 
+In case of 1-year of data with level 10, a 7z file can required up to 5GB of disk space, but when we unzip we easily reach 50-100GB. This library allows to access single days inside the 7z faster, without the need to unzip the file. 
 
 ## Execution
 There are two examples in the lobster_util.py file. 
