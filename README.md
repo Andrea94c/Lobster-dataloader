@@ -4,6 +4,15 @@
 Lobster data for multiple days are provided within big 7z files, which we have to unzip to access single days.
 In case of 1-year of data with level 10, a 7z file can required up to 5GB of disk space, but when we unzip we easily reach 50-100GB. This library allows to access single days inside the 7z faster, without the need to unzip the file. 
 
+## Setup
+If you are on a linux machine, chances are libarchive installation will raise errors. To fix them do
+```bash
+sudo apt-get install libarchive-dev 
+cd /usr/lib/x86_64-linux-gnu/
+sudo ln -s -f libarchive.a liblibarchive.a # the file has been renamed, so we link it to the correct file
+pip install libarchive
+```
+
 ## Execution
 There are two examples in the lobster_util.py file. 
 
